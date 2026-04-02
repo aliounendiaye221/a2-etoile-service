@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
+}
+
+@layer base {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-white text-ocean-950 antialiased selection:bg-gold-200 selection:text-gold-900;
+    background-image: 
+      radial-gradient(circle at 0% 0%, rgba(197, 160, 89, 0.03), transparent 30%),
+      radial-gradient(circle at 100% 100%, rgba(0, 212, 255, 0.03), transparent 30%),
+      radial-gradient(circle at 50% 50%, rgba(10, 30, 53, 0.01), transparent 50%);
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-500 via-mint-400 to-ocean-500;
+  }
+
+  .btn-shimmer {
+    @apply relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-transparent before:via-white/40 before:to-transparent before:animate-shimmer;
+  }
+
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-xl border border-white/40 shadow-glass hover:shadow-glass-hover transition-all duration-300;
+  }
+}
+
+/* Custom scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-clean-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-ocean-200 rounded-full hover:bg-ocean-500 transition-colors;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes shine {
+  100% {
+    transform: translateX(150%);
+  }
+}

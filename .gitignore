@@ -1,0 +1,36 @@
+# dependencies
+/node_modules
+
+# next
+/.next
+/out
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+build_log*.txt
+build_final_log.txt
+build_deploy_check.txt
+build_after_fix.txt
+lint_after_fix.txt
+terminal_test.txt
+
+# local env files
+.env*.local
+.env.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
