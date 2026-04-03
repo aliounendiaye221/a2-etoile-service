@@ -5,6 +5,7 @@ import { useMemo, useRef, useState } from "react";
 import { PremiumButton } from "@/components/ui/premium-button";
 import { cn } from "@/lib/utils";
 import { quoteRequestSchema, type QuoteRequestInput } from "@/lib/validators/quote-request";
+import { services } from "@/lib/site-content";
 
 type FormErrors = Partial<Record<keyof QuoteRequestInput, string>>;
 
@@ -151,12 +152,11 @@ export function QuoteRequestForm() {
               )}
             >
               <option value="">Sélectionnez un service</option>
-              <option value="Nettoyage Residentiel">Nettoyage Résidentiel</option>
-              <option value="Nettoyage Professionnel & Bureaux">Nettoyage Professionnel & Bureaux</option>
-              <option value="Pressing & Soin du Linge">Pressing & Soin du Linge</option>
-              <option value="Desinfection Specialisee">Désinfection Spécialisée</option>
-              <option value="Remise en etat">Remise en état après travaux</option>
-              <option value="Entretien de la Vitrerie">Entretien de la Vitrerie</option>
+              {services.map((service) => (
+                <option key={service.id} value={service.title}>
+                  {service.title}
+                </option>
+              ))}
             </select>
             {errors.serviceType ? <p className="text-xs text-red-600">{errors.serviceType}</p> : null}
           </div>

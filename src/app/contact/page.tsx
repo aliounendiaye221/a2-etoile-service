@@ -9,8 +9,8 @@ import { company } from "@/lib/site-content";
 import { normalizePhone } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Contactez A2 ETOILE SERVICE par telephone, e-mail ou WhatsApp pour une prise en charge rapide."
+  title: "Contactez-nous | Devis B2B/B2C Rapide à Dakar",
+  description: "Contactez A2 ETOILE SERVICE pour vos besoins en hygiène professionnelle (B2B), dératisation, ou nettoyage résidentiel de luxe à Dakar, Diamniadio et Rufisque."
 };
 
 const contactCards = [
@@ -103,7 +103,7 @@ export default function ContactPage() {
                 Décrivez votre contexte en quelques lignes. Nous revenons vers vous avec une proposition claire et personnalisée.
               </p>
               <div className="mt-6 relative z-10">
-                <PremiumLink href="/demande-de-devis" variant="secondary" className="border-white/20 text-white hover:bg-white/10 hover:border-white/30 backdrop-blur-sm">
+                <PremiumLink href="/devis" variant="secondary" className="border-white/20 text-white hover:bg-white/10 hover:border-white/30 backdrop-blur-sm">
                   Accéder au formulaire
                 </PremiumLink>
               </div>

@@ -11,7 +11,7 @@ export function WhatsAppButton() {
       aria-label="Contactez-nous sur WhatsApp"
     >
       <MessageCircle className="h-7 w-7" />
-      <span className="absolute right-full mr-3 whitespace-nowrap rounded-lg bg-clean-900 px-3 py-1.5 text-xs font-bold text-white opacity-0 transition-opacity group-hover:opacity-100">
+      <span className="absolute right-full mr-3 hidden whitespace-nowrap rounded-lg bg-clean-900 px-3 py-1.5 text-xs font-bold text-white opacity-0 transition-opacity group-hover:opacity-100 sm:block">
         Besoin d&apos;aide ?
       </span>
     </a>

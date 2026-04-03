@@ -20,7 +20,7 @@ export function CtaBanner({ title, description }: CtaBannerProps) {
               <p className="mt-4 max-w-3xl text-sm leading-relaxed text-ocean-100 sm:text-base">{description}</p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <PremiumLink href="/demande-de-devis" variant="primary" className="w-full justify-center bg-white text-ocean-900 hover:bg-ocean-50 sm:w-auto">
+              <PremiumLink href="/devis" variant="primary" className="w-full justify-center bg-white text-ocean-900 hover:bg-ocean-50 sm:w-auto">
                 Demander un devis
               </PremiumLink>
               <PremiumLink href="/contact" variant="secondary" className="w-full justify-center border-white/30 text-white hover:bg-white/10 hover:border-white/50 sm:w-auto">

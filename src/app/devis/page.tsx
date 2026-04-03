@@ -7,9 +7,8 @@ import { SectionShell } from "@/components/ui/section-shell";
 import { company } from "@/lib/site-content";
 
 export const metadata: Metadata = {
-  title: "Demande de devis",
-  description:
-    "Demandez un devis en quelques etapes avec un formulaire clair, rassurant et optimise pour mobile."
+  title: "Demander un Devis | A2 Étoile Service Dakar",
+  description: "Obtenez un devis gratuit et express pour vos contrats d'entretien d'entreprise, vitrerie, et nettoyage de sols au Sénégal. Réponse en 24h."
 };
 
 const reassurance = [

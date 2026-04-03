@@ -39,58 +39,82 @@ export const navLinks = [
   { href: "/", label: "Accueil" },
   { href: "/a-propos", label: "À propos" },
   { href: "/services", label: "Nos services" },
-  { href: "/demande-de-devis", label: "Devis Gratuit" },
+  { href: "/devis", label: "Devis Gratuit" },
   { href: "/contact", label: "Contact" }
 ] as const;
 
 export const services: ServiceItem[] = [
   {
     id: "pressing-luxe",
-    title: "Soin Textile Haute-Couture",
+    title: "Pressing & Soin Textile Haute-Couture",
     description:
-      "Le luxe s'invite dans votre dressing. Notre pressing premium traite vos textiles les plus délicats avec une expertise artisanale. Collecte et livraison soignées à Dakar et Rufisque.",
-    benefit: "Votre élégance, notre priorité quotidienne.",
-    image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?q=80&w=800&auto=format&fit=crop"
+      "Le luxe s'invite dans votre dressing avec A2 Étoile Service. Notre pressing premium traite vos textiles les plus délicats avec une expertise artisanale. Collecte et livraison soignées à Dakar et Rufisque.",
+    benefit: "L'élégance signée A2 Étoile Service.",
+    image: "/pressing_laverie.webp"
   },
   {
     id: "nettoyage-residentiel",
     title: "Le Sanctuaire de votre Villa",
     description:
-      "Plus qu'un simple nettoyage, nous assurons la préservation de votre patrimoine résidentiel. Brillance miroir des sols, vitrerie parfaite et discrétion absolue pour votre confort.",
+      "Plus qu'un simple nettoyage, A2 Étoile Service assure la préservation de votre patrimoine résidentiel. Brillance miroir des sols, vitrerie parfaite et discrétion absolue pour votre confort.",
     benefit: "Le gardien du prestige de votre foyer.",
-    image: "/hero-villa.png"
+    image: "/hero-villa.webp"
   },
   {
     id: "nettoyage-professionnel",
     title: "Hygiène & Image Corporative",
     description:
-      "Faites de vos locaux un moteur de performance. Nous accompagnons les entreprises de Dakar et Rufisque avec des solutions d'entretien rigoureuses qui renforcent votre image de marque.",
+      "Faites de vos locaux un moteur de performance. A2 Étoile Service accompagne les entreprises de Dakar et Rufisque avec des solutions d'entretien rigoureuses qui renforcent votre image de marque.",
     benefit: "La propreté au service de votre business.",
-    image: "/office-clean.png"
+    image: "/office-clean.webp"
   },
   {
-    id: "desinfection-industrielle",
-    title: "Sécurité & Bio-Nettoyage",
+    id: "deratisation",
+    title: "Dératisation & Lutte Anti-Rongeurs",
     description:
-      "Un environnement sain pour un esprit serein. Protocoles de désinfection certifiés pour les zones sensibles, structures de santé et espaces publics à fort trafic.",
-    benefit: "Zéro compromis sur la santé de tous.",
-    image: "https://images.unsplash.com/photo-1584467735815-f778f274e296?q=80&w=800&auto=format&fit=crop"
+      "Éradication préventive et curative complète par les experts A2 Étoile Service pour protéger vos stocks, vos locaux et vos villas. Des solutions discrètes et hautement efficaces.",
+    benefit: "Un environnement sain et parfaitement sécurisé.",
+    image: "/deratisation.webp"
   },
   {
     id: "remise-en-etat",
     title: "Excellence Fin de Chantier",
     description:
-      "La touche finale à vos investissements. Remise en état méticuleuse après travaux pour une intégration immédiate dans des locaux impeccables et sains.",
-    benefit: "Vos nouveaux locaux, livrés avec éclat.",
-    image: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=800&auto=format&fit=crop"
+      "La touche finale à vos investissements par les équipes A2 Étoile Service. Remise en état méticuleuse après travaux pour une intégration immédiate dans des locaux impeccables et sains.",
+    benefit: "Vos nouveaux locaux, livrés avec éclat par nos experts.",
+    image: "/fin_chantier.webp"
   },
   {
     id: "traitement-sols",
     title: "Restauration de Sols d'Exception",
     description:
-      "Redonnez vie à vos marbres et granits. Nos techniques de cristallisation et polissage restaurent la profondeur et la brillance originelle de vos surfaces les plus nobles.",
-    benefit: "Révélez la beauté cachée de vos sols.",
-    image: "https://images.unsplash.com/photo-1563453392212-326f5e854473?q=80&w=800&auto=format&fit=crop"
+      "Redonnez vie à vos marbres et granits. Les techniques de cristallisation et polissage de A2 Étoile Service restaurent la profondeur et la brillance originelle de vos surfaces les plus nobles.",
+    benefit: "Révélez la beauté cachée de vos sols avec notre équipe.",
+    image: "/restauration_sol.webp"
+  },
+  {
+    id: "desinsectisation",
+    title: "Désinsectisation Premium",
+    description:
+      "Une protection absolue pour vos espaces. A2 Étoile Service déploie des protocoles d'éradication ciblés, éliminant tout nuisible sans compromettre l'intégrité de vos intérieurs prestigieux.",
+    benefit: "La sérénité d'un environnement maîtrisé.",
+    image: "/desinsectisation.webp"
+  },
+  {
+    id: "lavage-haute-pression",
+    title: "Lavage Haute-Pression & Vitrerie",
+    description:
+      "La perfection de l'extérieur vers l'intérieur. Les agents spécialisés de A2 Étoile Service restaurent l'éclat originel de vos façades, terrasses et immenses baies vitrées avec une précision millimétrée.",
+    benefit: "Une façade sublimée, un prestige affirmé.",
+    image: "/lavage.webp"
+  },
+  {
+    id: "shampouinage",
+    title: "Soin & Shampouinage Textile",
+    description:
+      "L'art de raviver l'exceptionnel avec l'expertise d'A2 Étoile Service. Par notre technique d'extraction en profondeur, vos moquettes privées et canapés prestigieux retrouvent leur panache du premier jour.",
+    benefit: "L'élégance de vos tissus immaculés garantie par nos soins.",
+    image: "/pressing_shampoing.webp"
   }
 ];
 

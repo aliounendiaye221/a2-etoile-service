@@ -21,6 +21,17 @@ export function SiteHeader() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   return (
     <header 
       className={cn(
@@ -73,7 +84,7 @@ export function SiteHeader() {
             <a href={`tel:${company.phone}`} className="text-xs font-bold text-ocean-900/60 hover:text-ocean-900 transition-colors uppercase tracking-widest hidden xl:block">
               {company.phone}
             </a>
-            <PremiumLink href="/demande-de-devis" variant="primary" className="h-12 px-8 rounded-xl shadow-glass hover:shadow-glass-hover transition-all">
+            <PremiumLink href="/devis" variant="primary" className="h-12 px-8 rounded-xl shadow-glass hover:shadow-glass-hover transition-all">
               Devis Express
             </PremiumLink>
           </div>
@@ -94,7 +105,7 @@ export function SiteHeader() {
           "fixed inset-x-0 top-[76px] z-[99] p-3 transition-all duration-500 ease-out sm:top-[88px] sm:p-4 lg:hidden",
           open ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"
         )}>
-          <nav className="space-y-5 rounded-[1.75rem] border border-white/20 bg-white/80 p-5 shadow-2xl backdrop-blur-2xl sm:space-y-6 sm:rounded-[2.5rem] sm:p-8" aria-label="Navigation mobile">
+          <nav className="max-h-[calc(100vh-110px)] overflow-y-auto overscroll-contain space-y-5 rounded-[1.75rem] border border-white/20 bg-white/80 p-5 shadow-2xl backdrop-blur-2xl sm:max-h-[calc(100vh-130px)] sm:space-y-6 sm:rounded-[2.5rem] sm:p-8" aria-label="Navigation mobile">
             <ul className="space-y-4">
               {navLinks.map((link) => {
                 const active = pathname === link.href;
@@ -119,7 +130,7 @@ export function SiteHeader() {
               })}
             </ul>
             <div className="pt-4 border-t border-ocean-100">
-              <PremiumLink href="/demande-de-devis" variant="primary" className="h-14 w-full rounded-2xl text-base sm:h-16 sm:text-xl" onClick={() => setOpen(false)}>
+              <PremiumLink href="/devis" variant="primary" className="h-14 w-full rounded-2xl text-base sm:h-16 sm:text-xl" onClick={() => setOpen(false)}>
                 Demander mon devis
               </PremiumLink>
               <p className="mt-6 text-center text-sm text-ocean-600 font-bold uppercase tracking-widest">{company.phone}</p>

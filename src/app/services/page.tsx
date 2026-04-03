@@ -8,9 +8,9 @@ import { Sparkles, ArrowRight } from "lucide-react";
 import { PremiumLink } from "@/components/ui/premium-button";
 
 export const metadata: Metadata = {
-  title: "Nos Services Premium | Dakar & Rufisque",
-  description:
-    "Découvrez les expertises A2 ETOILE SERVICE : Pressing de luxe, nettoyage résidentiel et solutions sur-mesure pour les entreprises à Dakar et Rufisque."
+  title: "Services de Nettoyage et Entretien B2B/B2C au Sénégal",
+  description: "Nos 9 expertises professionnelles : nettoyage industriel, dératisation, lavage haute-pression, traitement de sols et hygiène pour entreprises à Dakar & Rufisque.",
+  keywords: ["services de nettoyage dakar", "dératisation dakar", "nettoyage façade sénégal", "ménage entreprise rufisque", "shampouinage moquette"]
 };
 
 const processSteps = [
@@ -53,7 +53,7 @@ export default function ServicesPage() {
         <Container>
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
              <div className="max-w-2xl">
-                <h2 className="font-display text-3xl leading-tight text-ocean-950 sm:text-4xl lg:text-5xl">
+                <h2 className="font-display text-2xl leading-tight text-ocean-950 sm:text-4xl lg:text-5xl">
                    Besoin d&apos;un Contrat <span className="text-gold-600">Entreprise</span> ?
                 </h2>
                 <p className="mt-5 text-base font-medium leading-relaxed text-clean-800 sm:mt-6 sm:text-xl">

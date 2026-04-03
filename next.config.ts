@@ -11,8 +11,23 @@ const nextConfig: NextConfig = {
     ],
   },
   turbopack: {
-    root: process.cwd()
-  }
+    root: __dirname
+  },
+
+  async redirects() {
+    return [
+      {
+        source: '/demande-de-devis',
+        destination: '/devis',
+        permanent: true,
+      },
+      {
+        source: '/devis-gratuit',
+        destination: '/devis',
+        permanent: true,
+      },
+    ]
+  },
 };
 
 export default nextConfig;

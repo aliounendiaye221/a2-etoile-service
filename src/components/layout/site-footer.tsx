@@ -63,16 +63,16 @@ export function SiteFooter() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 text-gold-500" />
-                <span>Excellence Mobile : <br className="hidden lg:block"/> {company.address}</span>
+                <span className="break-words">Excellence Mobile : <br className="hidden lg:block"/> {company.address}</span>
               </li>
             </ul>
           </div>
         </div>
         
-        <div className="mt-16 border-t border-ocean-50 pt-8 text-[11px] text-ocean-400 font-bold uppercase tracking-[0.25em]">
+        <div className="mt-16 border-t border-ocean-50 pt-8 text-[11px] font-bold uppercase tracking-[0.12em] text-ocean-400 sm:tracking-[0.25em]">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <p>© {new Date().getFullYear()} A2 ETOILE SERVICE. Designed for Excellence.</p>
-            <div className="flex gap-6">
+            <p className="text-center sm:text-left">© {new Date().getFullYear()} A2 ETOILE SERVICE. Designed for Excellence.</p>
+            <div className="flex flex-wrap justify-center gap-4 sm:justify-start sm:gap-6">
               <Link href="/mentions-legales" className="hover:text-ocean-900 transition-colors">Mentions Légales</Link>
               <Link href="/politique-de-confidentialite" className="hover:text-ocean-900 transition-colors">Confidentialité</Link>
             </div>
