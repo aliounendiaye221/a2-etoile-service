@@ -34,11 +34,26 @@ Site institutionnel et commercial premium construit avec Next.js, TypeScript, Ta
    - NEXT_PUBLIC_SUPABASE_URL
    - NEXT_PUBLIC_SUPABASE_ANON_KEY
    - SUPABASE_SERVICE_ROLE_KEY (ou SUPABASE_SECRET_KEY)
+   - SUPABASE_ALLOWED_REDIRECT_ORIGINS (optionnel, liste d'origines separees par des virgules)
 3. Deployer:
    - via Git (recommande) en connectant le repository a Vercel
    - ou via CLI: npx vercel --prod
 
 Important: ne jamais exposer SUPABASE_SERVICE_ROLE_KEY / SUPABASE_SECRET_KEY dans le client.
+
+## Configuration Supabase Auth (obligatoire)
+
+Dans Supabase > Authentication > URL Configuration:
+
+- Site URL:
+   - https://a2-etoile-service.vercel.app
+- Redirect URLs:
+  - http://localhost:3000/auth/callback
+   - https://a2-etoile-service.vercel.app/auth/callback
+   - https://a2-etoile-service-lune221s-projects.vercel.app/auth/callback
+   - https://a2-etoile-service-git-main-lune221s-projects.vercel.app/auth/callback
+
+Si vous utilisez des URLs de preview Vercel pour tester la connexion, ajoutez aussi ces URLs de preview dans Redirect URLs.
 
 ## Securite formulaire devis
 

@@ -1,11 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { company, navLinks } from "@/lib/site-content";
 import { normalizePhone } from "@/lib/utils";
 import { Container } from "@/components/ui/container";
 import { Sparkles, MapPin, Phone, Mail } from "lucide-react";
 
 export function SiteFooter() {
+  const pathname = usePathname();
+
+  if (pathname.startsWith('/admin') || pathname.startsWith('/login')) {
+    return null;
+  }
+
   return (
     <footer className="mt-24 border-t border-ocean-100 bg-white text-ocean-950">
       <Container className="py-16">
@@ -71,7 +80,10 @@ export function SiteFooter() {
         
         <div className="mt-16 border-t border-ocean-50 pt-8 text-[11px] font-bold uppercase tracking-[0.12em] text-ocean-400 sm:tracking-[0.25em]">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-center sm:text-left">© {new Date().getFullYear()} A2 ETOILE SERVICE. Designed for Excellence.</p>
+            <p className="text-center sm:text-left relative flex items-center justify-center sm:justify-start">
+              © {new Date().getFullYear()} A2 ETOILE SERVICE. Designed for Excellence.
+              <Link href="/login" className="ml-2 mt-0.5 text-ocean-300 opacity-20 hover:opacity-100 transition-opacity" title="Espace Administrateur">✦</Link>
+            </p>
             <div className="flex flex-wrap justify-center gap-4 sm:justify-start sm:gap-6">
               <Link href="/mentions-legales" className="hover:text-ocean-900 transition-colors">Mentions Légales</Link>
               <Link href="/politique-de-confidentialite" className="hover:text-ocean-900 transition-colors">Confidentialité</Link>

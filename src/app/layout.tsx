@@ -3,6 +3,9 @@ import { Inter, Syne } from "next/font/google";
 import { company, services } from "@/lib/site-content";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
+import { WhatsAppButton } from "@/components/ui/whatsapp-button";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const inter = Inter({
@@ -70,6 +73,9 @@ export default function RootLayout({
           {children}
         </main>
         <SiteFooter />
+        <WhatsAppButton />
+        <Analytics />
+        <SpeedInsights />
         
         {/* Schema.org JSON-LD for Local Business & B2B Ranking */}
         <script

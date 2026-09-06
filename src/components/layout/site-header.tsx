@@ -22,15 +22,15 @@ export function SiteHeader() {
   }, []);
 
   useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
-  useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
   }, [open]);
+
+  if (pathname.startsWith('/admin') || pathname.startsWith('/login')) {
+    return null;
+  }
 
   return (
     <header 

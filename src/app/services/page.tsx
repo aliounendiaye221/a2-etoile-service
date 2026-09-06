@@ -3,14 +3,15 @@ import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { SectionShell } from "@/components/ui/section-shell";
 import { ServiceCard } from "@/components/ui/service-card";
-import { services } from "@/lib/site-content";
+import { company, services } from "@/lib/site-content";
+import { normalizePhone } from "@/lib/utils";
 import { Sparkles, ArrowRight } from "lucide-react";
 import { PremiumLink } from "@/components/ui/premium-button";
 
 export const metadata: Metadata = {
-  title: "Services de Nettoyage et Entretien B2B/B2C au Sénégal",
-  description: "Nos 9 expertises professionnelles : nettoyage industriel, dératisation, lavage haute-pression, traitement de sols et hygiène pour entreprises à Dakar & Rufisque.",
-  keywords: ["services de nettoyage dakar", "dératisation dakar", "nettoyage façade sénégal", "ménage entreprise rufisque", "shampouinage moquette"]
+  title: "Services de Nettoyage, Gravure & Entretien au Sénégal | A2 Étoile Service",
+  description: "Nos expertises de prestige à Dakar & Rufisque : gravure d'art sur marbre, plexiglas, aluminium et laiton, lavage de tapis à la monobrosse, nettoyage industriel, dératisation et traitement de sols.",
+  keywords: ["services de nettoyage dakar", "gravure sur marbre sénégal", "gravure plexiglas dakar", "gravure laiton sénégal", "lavage tapis monobrosse dakar", "dératisation dakar", "nettoyage façade sénégal"]
 };
 
 const processSteps = [
@@ -97,9 +98,9 @@ export default function ServicesPage() {
              <h3 className="font-display text-2xl text-ocean-900 sm:text-3xl">Une urgence ?</h3>
              <p className="mt-4 text-base text-clean-800 sm:text-lg">Nos équipes mobiles à Rufisque et Dakar peuvent intervenir sous 4 heures pour les besoins critiques.</p>
              <div className="mt-8">
-                <a href="tel:+221770000000" className="text-xl font-black text-ocean-900 transition-colors hover:text-gold-600 sm:text-2xl">
-                   +221 77 000 00 00
-                </a>
+                 <a href={`tel:${normalizePhone(company.phone)}`} className="text-xl font-black text-ocean-900 transition-colors hover:text-gold-600 sm:text-2xl">
+                    {company.phone}
+                 </a>
              </div>
           </div>
         </Container>

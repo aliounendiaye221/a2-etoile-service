@@ -19,7 +19,7 @@ export type FaqItem = {
 export const company = {
   name: "A2 ÉTOILE SERVICE",
   tagline: "L'Excellence au Service de votre Hygiène",
-  slogan: "NETTOYAGE • ÉCLAT • PROFESSIONNALISME",
+  slogan: "L'Excellence au cours de nos agissements",
   phone: "+221 77 000 00 00",
   whatsapp: "https://wa.me/221770000000",
   email: "contact@a2etoileservice.sn",
@@ -67,6 +67,46 @@ export const services: ServiceItem[] = [
       "Faites de vos locaux un moteur de performance. A2 Étoile Service accompagne les entreprises de Dakar et Rufisque avec des solutions d'entretien rigoureuses qui renforcent votre image de marque.",
     benefit: "La propreté au service de votre business.",
     image: "/office-clean.webp"
+  },
+  {
+    id: "gravure-marbre",
+    title: "Gravure sur Marbre & Pierres Nobles",
+    description:
+      "Gravure d'art et lettrage de haute précision sur marbres et granits d'exception. Plaques commémoratives, frontons prestigieux et signalétique ornementale taillés avec une finesse remarquable.",
+    benefit: "La noblesse et la pérennité de la pierre d'exception.",
+    image: "/service_gravure_marbre.jpg"
+  },
+  {
+    id: "gravure-plexiglas",
+    title: "Gravure sur Plexiglas & Acrylique",
+    description:
+      "Usinage et gravure laser haute fidélité sur plexiglas transparent, givré ou teinté. Plaques professionnelles modernes, signalétique murale sur entretoises inox et enseignes rétro-éclairées épurées.",
+    benefit: "Clarté cristalline et modernité architecturale.",
+    image: "/service_gravure_plexiglas.jpg"
+  },
+  {
+    id: "gravure-aluminium",
+    title: "Gravure sur Aluminium Brossé",
+    description:
+      "Conception et gravure industrielle de précision sur plaques d'aluminium anodisé et brossé. Finition biseautée ultra-nette, résistance extrême aux intempéries pour façades d'entreprises et sièges sociaux.",
+    benefit: "Finition technique impeccable et durabilité absolue.",
+    image: "/service_gravure_aluminium.jpg"
+  },
+  {
+    id: "gravure-laiton",
+    title: "Gravure sur Laiton & Métaux Précieux",
+    description:
+      "L'élégance intemporelle du laiton poli miroir avec gravure profonde et émaillage de prestige. Idéal pour cabinets juridiques, notaires, réceptions d'hôtels de luxe et résidences d'ambassadeurs.",
+    benefit: "Le rayonnement prestigieux du métal doré.",
+    image: "/service_gravure_laiton.jpg"
+  },
+  {
+    id: "lavage-tapis-monobrosse",
+    title: "Lavage de Tapis & Moquettes à la Monobrosse",
+    description:
+      "Traitement mécanique intensif par monobrosse rotative et émulsion moussante active. Élimination totale des taches rebelles, redressement des fibres textiles et désinfection thermique en profondeur.",
+    benefit: "Une rénovation textile intégrale et un éclat restauré.",
+    image: "/service_lavage_tapis_monobrosse.jpg"
   },
   {
     id: "deratisation",
