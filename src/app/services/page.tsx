@@ -9,9 +9,9 @@ import { Sparkles, ArrowRight } from "lucide-react";
 import { PremiumLink } from "@/components/ui/premium-button";
 
 export const metadata: Metadata = {
-  title: "Services de Nettoyage, Gravure & Entretien au Sénégal | A2 Étoile Service",
-  description: "Nos expertises de prestige à Dakar & Rufisque : gravure d'art sur marbre, plexiglas, aluminium et laiton, lavage de tapis à la monobrosse, nettoyage industriel, dératisation et traitement de sols.",
-  keywords: ["services de nettoyage dakar", "gravure sur marbre sénégal", "gravure plexiglas dakar", "gravure laiton sénégal", "lavage tapis monobrosse dakar", "dératisation dakar", "nettoyage façade sénégal"]
+  title: "Services de Nettoyage, Gravure & Traitement 3D au Sénégal | A2 Étoile Service",
+  description: "Expertises d'hygiène et de prestige à Dakar & Rufisque : nettoyage fin de chantier, dératisation, désinsectisation, déreptilisation, gravure d'art, lavage de tapis à la monobrosse et traitement de sols.",
+  keywords: ["services de nettoyage dakar", "nettoyage fin de chantier dakar", "dératisation dakar", "désinsectisation sénégal", "déreptilisation dakar rufisque", "traitement 3d sénégal", "gravure sur marbre sénégal", "lavage tapis monobrosse dakar"]
 };
 
 const processSteps = [

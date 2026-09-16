@@ -109,20 +109,36 @@ export const services: ServiceItem[] = [
     image: "/service_lavage_tapis_monobrosse.jpg"
   },
   {
-    id: "deratisation",
-    title: "Dératisation & Lutte Anti-Rongeurs",
+    id: "nettoyage-fin-de-chantier",
+    title: "Nettoyage Fin de Chantier",
     description:
-      "Éradication préventive et curative complète par les experts A2 Étoile Service pour protéger vos stocks, vos locaux et vos villas. Des solutions discrètes et hautement efficaces.",
-    benefit: "Un environnement sain et parfaitement sécurisé.",
-    image: "/deratisation.webp"
+      "Remise en état complète et minutieuse après travaux pour villas, résidences et locaux professionnels à Dakar et Rufisque. Élimination des poussières résiduelles, décapage des sols et vitrerie panoramique pour une livraison clé en main.",
+    benefit: "Des espaces impeccables, sains et prêts à emménager.",
+    image: "/service_nettoyage_fin_chantier.jpg"
   },
   {
-    id: "remise-en-etat",
-    title: "Excellence Fin de Chantier",
+    id: "deratisation",
+    title: "Dératisation",
     description:
-      "La touche finale à vos investissements par les équipes A2 Étoile Service. Remise en état méticuleuse après travaux pour une intégration immédiate dans des locaux impeccables et sains.",
-    benefit: "Vos nouveaux locaux, livrés avec éclat par nos experts.",
-    image: "/fin_chantier.webp"
+      "Éradication ciblée et prévention anti-rongeurs par les experts A2 Étoile Service. Pose de postes d'appâtage sécurisés, diagnostic des points d'intrusion et assainissement durable de vos villas, locaux et entrepôts.",
+    benefit: "Protection totale contre les rongeurs et sérénité garantie.",
+    image: "/service_deratisation.jpg"
+  },
+  {
+    id: "desinsectisation",
+    title: "Désinsectisation",
+    description:
+      "Élimination radicale de tous insectes nuisibles (cafards, moustiques, termites, puces, punaises de lit) par pulvérisation de précision et nébulisation certifiée respectueuse de vos intérieurs et extérieurs.",
+    benefit: "Un cadre de vie assaini et débarrassé de tout nuisible.",
+    image: "/service_desinsectisation.jpg"
+  },
+  {
+    id: "dereptilisation",
+    title: "Déreptilisation",
+    description:
+      "Protection spécialisée contre les serpents, scorpions et reptiles dangereux à Dakar, Rufisque et leurs environs. Application de barrières répulsives homologuées et sécurisation des jardins, fondations et pourtours de piscines.",
+    benefit: "Sécurité absolue pour votre famille et vos collaborateurs.",
+    image: "/service_dereptilisation.jpg"
   },
   {
     id: "traitement-sols",
@@ -131,14 +147,6 @@ export const services: ServiceItem[] = [
       "Redonnez vie à vos marbres et granits. Les techniques de cristallisation et polissage de A2 Étoile Service restaurent la profondeur et la brillance originelle de vos surfaces les plus nobles.",
     benefit: "Révélez la beauté cachée de vos sols avec notre équipe.",
     image: "/restauration_sol.webp"
-  },
-  {
-    id: "desinsectisation",
-    title: "Désinsectisation Premium",
-    description:
-      "Une protection absolue pour vos espaces. A2 Étoile Service déploie des protocoles d'éradication ciblés, éliminant tout nuisible sans compromettre l'intégrité de vos intérieurs prestigieux.",
-    benefit: "La sérénité d'un environnement maîtrisé.",
-    image: "/desinsectisation.webp"
   },
   {
     id: "lavage-haute-pression",
